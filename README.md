@@ -1,6 +1,7 @@
 # 🚀 SAP BTP Playground 🎉
 
-**Welcome, fellow explorers of the cloud!**  
+**Welcome, fellow explorers of the cloud!**
+
 This repo is a collection of experimental SAP BTP applications. You’ll find code snippets, project setups, and wild experiments that may or may not crash things in the best possible way. Dive in, break stuff (on purpose), and most importantly—learn!
 
 ## 🔥 What's inside?
