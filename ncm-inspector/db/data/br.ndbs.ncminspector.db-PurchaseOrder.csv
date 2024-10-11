@@ -1,0 +1,49 @@
+id,supplierId,supplierCnpj,supplierUf,paymentTerms,incoterms,date,createdAt,createdBy,modifiedAt,modifiedBy
+4500000046,Textile Importadora Ltda,,BA,À vista,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000058,Pharma Distribuidora S/A,,RJ,30 dias,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000060,Food Distribuição Ltda,,RS,Parcelado,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000078,Agro Equipamentos S/A,,PR,À vista,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000095,Pharma Distribuidora S/A,,RJ,À vista,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000097,Agro Equipamentos S/A,,PR,30 dias,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000102,Pharma Distribuidora S/A,,RJ,À vista,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000113,Auto Parts Ltda,,MG,30 dias,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000129,Auto Parts Ltda,,MG,Parcelado,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000152,Auto Parts Ltda,,MG,Parcelado,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000160,Agro Equipamentos S/A,,PR,60 dias,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000194,Agro Equipamentos S/A,,PR,30 dias,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000197,Tech Supplier Ltda,,SP,Parcelado,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000220,Food Distribuição Ltda,,RS,Parcelado,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000265,Agro Equipamentos S/A,,PR,Parcelado,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000296,Food Distribuição Ltda,,RS,Parcelado,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000310,Pharma Distribuidora S/A,,RJ,30 dias,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000340,Pharma Distribuidora S/A,,RJ,Parcelado,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000400,Textile Importadora Ltda,,BA,Parcelado,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000421,Food Distribuição Ltda,,RS,Parcelado,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000445,Auto Parts Ltda,,MG,Parcelado,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000481,Auto Parts Ltda,,MG,60 dias,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000515,Agro Equipamentos S/A,,PR,À vista,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000582,Pharma Distribuidora S/A,,RJ,60 dias,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000606,Textile Importadora Ltda,,BA,60 dias,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000619,Food Distribuição Ltda,,RS,30 dias,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000626,Food Distribuição Ltda,,RS,60 dias,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000649,Textile Importadora Ltda,,BA,Parcelado,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000663,Auto Parts Ltda,,MG,À vista,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000668,Agro Equipamentos S/A,,PR,60 dias,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000672,Tech Supplier Ltda,,SP,À vista,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000680,Textile Importadora Ltda,,BA,Parcelado,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000707,Auto Parts Ltda,,MG,30 dias,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000716,Food Distribuição Ltda,,RS,À vista,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000726,Tech Supplier Ltda,,SP,30 dias,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000790,Textile Importadora Ltda,,BA,À vista,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000791,Pharma Distribuidora S/A,,RJ,À vista,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000802,Textile Importadora Ltda,,BA,30 dias,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000811,Tech Supplier Ltda,,SP,À vista,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000827,Tech Supplier Ltda,,SP,60 dias,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000839,Tech Supplier Ltda,,SP,30 dias,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000849,Food Distribuição Ltda,,RS,Parcelado,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000870,Textile Importadora Ltda,,BA,60 dias,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000946,Auto Parts Ltda,,MG,Parcelado,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000982,Pharma Distribuidora S/A,,RJ,30 dias,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000983,Pharma Distribuidora S/A,,RJ,À vista,CIF,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000992,Tech Supplier Ltda,,SP,À vista,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
+4500000996,Auto Parts Ltda,,MG,30 dias,FOB,2024-10-11,2024-10-11,ndbs,2024-10-11,ndbs
