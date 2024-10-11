@@ -127,7 +127,19 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/PurchaseOrderItem"
+              "contextPath": "/PurchaseOrderItem",
+              "content": {
+                "header": {
+                  "actions": {
+                    "CheckNcm": {
+                      "press": "br.ndbs.ncminspector.ui.frontend.ext.controller.Custom.checkNcm",
+                      "visible": true,
+                      "enabled": true,
+                      "text": "{i18n>verificarncm}"
+                    }
+                  }
+                }
+              }
             }
           }
         }
