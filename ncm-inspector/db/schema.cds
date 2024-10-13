@@ -1,4 +1,4 @@
-using {managed} from '@sap/cds/common';
+using {managed, Currency} from '@sap/cds/common';
 
 namespace br.ndbs.ncminspector.db;
 

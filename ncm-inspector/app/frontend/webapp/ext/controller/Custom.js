@@ -4,20 +4,22 @@ sap.ui.define([
     'use strict';
 
     return {
-        checkNcm: function (oEvent) {
 
-            // Build request payload
+        checkNcm: async function (oEvent) {
+
+            const materialDescr = oEvent.getValue("materialDescr");
+            const actualNcm = oEvent.getValue("ncm");
+
             var oData = {
-                messages: [
-                    { role: "system", content: "Você é um assistente de IA que ajuda as pessoas a encontrar informações" },
-                    { role: "user", content: "Quanto é 1 + 1" },
+                "messages": [
+                    { "role": "user", "content": [{ "type": "text", "text": "Qual o código NCM do " + materialDescr + "? Somente o código e a descrição do NCM e mais nada" }] }
                 ],
-                temperature: 0.1,
-                top_p: 0.1,
-                max_tokens: 50
-            };
+                "temperature": 0.0,
+                "top_p": 0.1,
+                "max_tokens": 40,
+                "n": 1
+            }
 
-            // Use native fetch API to call the backend
             fetch("https://aoai-rpa-prod-001.openai.azure.com/openai/deployments/ncm/chat/completions?api-version=2024-02-15-preview", {
                 method: "POST",
                 headers: {
@@ -28,7 +30,14 @@ sap.ui.define([
             })
                 .then(response => response.json())
                 .then(data => {
-                    MessageToast.show("AI Response: " + JSON.stringify(data));
+                    const correctNcm = data.choices[0].message.content;
+
+                    if (correctNcm.includes(actualNcm.trim())) {
+                        MessageToast.show("Código de NCM correto!");
+                    } else {
+                        MessageToast.show("Código de NCM incorreto!\nCorreto: " + correctNcm, { duration: 20000, width: "500px" });
+                    }
+
                 })
                 .catch(error => {
                     MessageToast.show(JSON.stringify(error));
