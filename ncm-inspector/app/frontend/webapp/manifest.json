@@ -1,0 +1,153 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "br.ndbs.ncminspector.ui.frontend",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:lrop",
+      "version": "1.15.1",
+      "toolsId": "4f37809c-6983-4a83-aa99-4760a782fcd5"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/odata/v4/purchase-order/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "odataVersion": "4.0"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.129.2",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.fe.templates": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "br.ndbs.ncminspector.ui.frontend.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true
+        }
+      },
+      "@i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "uri": "i18n/i18n.properties"
+      }
+    },
+    "resources": {
+      "css": []
+    },
+    "routing": {
+      "config": {},
+      "routes": [
+        {
+          "pattern": ":?query:",
+          "name": "PurchaseOrderItemList",
+          "target": "PurchaseOrderItemList"
+        },
+        {
+          "pattern": "PurchaseOrderItem({key}):?query:",
+          "name": "PurchaseOrderItemObjectPage",
+          "target": "PurchaseOrderItemObjectPage"
+        }
+      ],
+      "targets": {
+        "PurchaseOrderItemList": {
+          "type": "Component",
+          "id": "PurchaseOrderItemList",
+          "name": "sap.fe.templates.ListReport",
+          "options": {
+            "settings": {
+              "contextPath": "/PurchaseOrderItem",
+              "variantManagement": "Page",
+              "navigation": {
+                "PurchaseOrderItem": {
+                  "detail": {
+                    "route": "PurchaseOrderItemObjectPage"
+                  }
+                }
+              },
+              "controlConfiguration": {
+                "@com.sap.vocabularies.UI.v1.LineItem": {
+                  "tableSettings": {
+                    "type": "ResponsiveTable"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "PurchaseOrderItemObjectPage": {
+          "type": "Component",
+          "id": "PurchaseOrderItemObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/PurchaseOrderItem",
+              "content": {
+                "header": {
+                  "actions": {
+                    "CheckNcm": {
+                      "press": "br.ndbs.ncminspector.ui.frontend.ext.controller.Custom.checkNcm",
+                      "visible": true,
+                      "enabled": true,
+                      "text": "{i18n>verificarncm}"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "sap.fiori": {
+    "registrationIds": [],
+    "archeType": "transactional"
+  }
+}

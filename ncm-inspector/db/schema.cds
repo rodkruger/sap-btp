@@ -1,4 +1,4 @@
-using {managed} from '@sap/cds/common';
+using {managed, Currency} from '@sap/cds/common';
 
 namespace br.ndbs.ncminspector.db;
 
@@ -21,16 +21,16 @@ entity PurchaseOrderItem : managed {
         itemNo        : String;
         materialId    : String;
         materialDescr : String;
-        quantity      : String;
+        quantity      : Decimal(13, 2);
         unit          : String;
-        unitPrice     : String;
+        unitPrice     : Decimal(13, 2);
         ncm           : String;
         cfop          : String;
-        icms          : String;
-        ipi           : String;
-        pis           : String;
-        cofins        : String;
+        icms          : Decimal(13, 2);
+        ipi           : Decimal(13, 2);
+        pis           : Decimal(13, 2);
+        cofins        : Decimal(13, 2);
         origin        : String;
-        total         : String;
+        total         : Decimal(13, 2);
 
 }
