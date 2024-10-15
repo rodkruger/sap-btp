@@ -12,7 +12,7 @@ sap.ui.define([
 
             var oData = {
                 "messages": [
-                    { "role": "user", "content": [{ "type": "text", "text": "Qual o código NCM do " + materialDescr + "? Somente o código e a descrição do NCM e mais nada" }] }
+                    { "role": "user", "content": [{ "type": "text", "text": "Qual o código NCM do " + materialDescr + "? Somente o código e a descrição do NCM e mais nada. Resposta em inglês" }] }
                 ],
                 "temperature": 0.0,
                 "top_p": 0.1,
@@ -33,9 +33,9 @@ sap.ui.define([
                     const correctNcm = data.choices[0].message.content;
 
                     if (correctNcm.includes(actualNcm.trim())) {
-                        MessageToast.show("Código de NCM correto!");
+                        MessageToast.show("NCM correct!");
                     } else {
-                        MessageToast.show("Código de NCM incorreto!\nCorreto: " + correctNcm, { duration: 20000, width: "500px" });
+                        MessageToast.show("NCM code incorrect!\nCorrect: " + correctNcm, { duration: 20000, width: "500px" });
                     }
 
                 })
